@@ -49,7 +49,7 @@ jobs:
           echo -e "---\n:github: Bearer $GITHUB_SECRET_TOKEN" >> ~/.gem/credentials
           chmod 0600 ~/.gem/credentials
         env:
-          GITHUB_SECRET_TOKEN: ${{ secrets.GH_PACKAGE_TOKEN }}
+          GITHUB_SECRET_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build gem and publish to github package
         id: gemstep
