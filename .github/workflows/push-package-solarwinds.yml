@@ -6,23 +6,9 @@ name: Ruby Gem to Github Package
 on:
   workflow_dispatch:
     inputs:
-      rubygem-path:
+      gem_name:
         required: true
-        description: 'The path that package you want to publish (should include /)'
-        # metrics_sdk/
-        # metrics_api/
-        # exporter/otlp/
-
-      rubygem-name:
-        required: true
-        description: 'The gem to publish, e.g. opentelemetry-instrumentation-<???>'
-        # opentelemetry-metrics-sdk
-        # opentelemetry-metrics-api
-        # opentelemetry-exporter-otlp
-
-      version:
-        required: true
-        description: 'The gem version to publish'
+        description: 'The name of gem you want to publish (without opentelemetry-instrumentation e.g. aws_sdk)'
 
 jobs:
   build:
@@ -37,12 +23,6 @@ jobs:
         with:
           ruby-version: 3.1
 
-      - name: Install gems
-        run: |
-          cd ${{ github.event.inputs.rubygem-path }}
-          echo 'gem: --no-document' >> ~/.gemrc
-          bundle install
-
       - name: Setup secrets
         run: |
           mkdir ~/.gem
@@ -54,8 +34,4 @@ jobs:
       - name: Build gem and publish to github package
         id: gemstep
         run:  |
-          gem_name=${{ github.event.inputs.rubygem-name }}
-          gem_version=${{ github.event.inputs.version }}
-          cd ${{ github.event.inputs.rubygem-path }}
-          gem build "${gem_name}.gemspec"
-          gem push --key github --host https://rubygems.pkg.github.com/solarwinds "${gem_name}-${gem_version}.gem"
+          ./script/sw_build_and_push_gem.sh ${{ github.event.inputs.gem_name }}
