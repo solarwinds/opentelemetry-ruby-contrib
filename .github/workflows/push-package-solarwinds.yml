@@ -15,7 +15,7 @@ on:
 
       rubygem-name:
         required: true
-        description: 'The name that package you want to publish'
+        description: 'The gem to publish, e.g. opentelemetry-instrumentation-<???>'
         # opentelemetry-metrics-sdk
         # opentelemetry-metrics-api
         # opentelemetry-exporter-otlp
