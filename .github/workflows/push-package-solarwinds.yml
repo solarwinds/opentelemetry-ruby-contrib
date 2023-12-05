@@ -1,7 +1,4 @@
-# Copyright (c) 2023 SolarWinds, LLC.
-# All rights reserved.
-
-name: Ruby Gem to Github Package
+name: Ruby Gem to SolarWinds Github Package
 
 on:
   workflow_dispatch:
