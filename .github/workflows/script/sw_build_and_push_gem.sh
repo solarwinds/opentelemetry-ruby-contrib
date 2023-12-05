@@ -2,7 +2,7 @@
 
 GEM_NAME="$1"
 
-cd "instrumentation/$GEM_NAME" || exit
+cd "instrumentation/$GEM_NAME" || exit 1
 
 bundle install
 
