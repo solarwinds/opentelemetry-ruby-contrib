@@ -1,8 +1,10 @@
-#!/bin/bash
+#!/bin/sh
 
 GEM_NAME="$1"
 
 cd "instrumentation/$GEM_NAME" || exit 1
+
+echo "Current directory: $PWD"
 
 bundle install
 

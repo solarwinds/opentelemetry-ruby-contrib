@@ -8,6 +8,7 @@ on:
         description: 'The name of gem you want to publish (without opentelemetry-instrumentation e.g. aws_sdk)'
 
 jobs:
+  # act -j build --container-architecture linux/arm64 --secret-file act.secrets
   build:
     name: Build + Publish to Github Package
     runs-on: ubuntu-latest
@@ -30,5 +31,5 @@ jobs:
 
       - name: Build gem and publish to github package
         id: gemstep
-        run:  |
-          ./script/sw_build_and_push_gem.sh ${{ github.event.inputs.gem_name }}
+        run: |
+          .github/workflows/script/sw_build_and_push_gem.sh ${{ github.event.inputs.gem_name }}
