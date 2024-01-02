@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 GEM_NAME="$1"
 
 cd "instrumentation/$GEM_NAME" || exit 1
@@ -17,9 +19,4 @@ gem_version=$(grep -E "VERSION\s*=\s*'[^']+'" "$found_file" | awk -F "'" '{print
 gem build "opentelemetry-instrumentation-$GEM_NAME.gemspec"
 gem push --key github --host https://rubygems.pkg.github.com/solarwinds "opentelemetry-instrumentation-$GEM_NAME-$gem_version.gem"
 
-if [ $? -eq 0 ]; then
-  echo "Finished"
-else
-  echo "Failed"
-  exit 1
-fi
+echo "Finished"
