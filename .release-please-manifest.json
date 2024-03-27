@@ -31,7 +31,7 @@
   "instrumentation/faraday": "0.23.4",
   "instrumentation/mongo": "0.22.2",
   "instrumentation/mysql2": "0.25.0",
-  "instrumentation/net_http": "0.22.4",
+  "instrumentation/net_http": "0.23.0",
   "instrumentation/pg": "0.26.1",
   "instrumentation/que": "0.7.1",
   "instrumentation/rack": "0.24.0",
