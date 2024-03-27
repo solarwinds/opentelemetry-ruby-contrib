@@ -1,5 +1,25 @@
 # Release History: opentelemetry-instrumentation-sinatra
 
+## [0.24.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-sinatra-v0.23.2...opentelemetry-instrumentation-sinatra/v0.24.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+
+### Features
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* Use Rack Middleware Helper ([#428](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/428)) ([78a137e](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/78a137e6e95e4f4358e9a0f46d5e3e929e9f35be))
+
+
+### Bug Fixes
+
+* add exceptions to sinatra spans, ruboproof test. ([#328](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/328)) ([d4d404c](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/d4d404c0d43de66e02fd0fd74192b6722e5b7476))
+* add exceptions to sinatra spans. ([#133](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/133)) ([30db869](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/30db869bec7f51f3e44c3a741876557a67a28527))
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+
 ### v0.23.2 / 2023-07-21
 
 * ADDED: Update `opentelemetry-common` from [0.19.3 to 0.20.0](https://github.com/open-telemetry/opentelemetry-ruby-contrib/pull/537)
