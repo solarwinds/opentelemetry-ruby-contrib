@@ -1,5 +1,25 @@
 # Release History: opentelemetry-instrumentation-resque
 
+## [0.6.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-resque-v0.5.0...opentelemetry-instrumentation-resque/v0.6.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+
+### Features
+
+* Add :force_flush option to Resque instrumentation ([#117](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/117)) ([a45ca93](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/a45ca93cc64179ee03c03347ba221172e96aa7a2))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+
+
+### Bug Fixes
+
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* fix flaky tests for resque. ([#302](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/302)) ([275c6b9](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/275c6b950c1f1ea420b7ac8c7b1f7b15ea3bed55))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+* Remove inline linter rules ([#608](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/608)) ([bc4a937](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/bc4a937ed2a0d1898f0f19ae45a2b3a0ef9a067c))
+
 ### v0.5.1 / 2024-02-08
 
 * DOCS: Relocate Resque config option comments to render in Yard docs
