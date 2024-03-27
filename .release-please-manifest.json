@@ -1,5 +1,5 @@
 {
-  "helpers/mysql": "0.0.0",
+  "helpers/mysql": "1.0.0",
   "helpers/sql_obfuscation": "0.0.0",
   "instrumentation/gruf": "0.1.1",
   "instrumentation/grape": "0.1.6",
