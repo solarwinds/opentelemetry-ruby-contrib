@@ -1,5 +1,41 @@
 # Release History: opentelemetry-instrumentation-pg
 
+## [0.27.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-pg-v0.26.1...opentelemetry-instrumentation-pg/v0.27.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move shared sql behavior to helper gems ([#529](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/529))
+* obfuscation for mysql2, dalli and postgresql as default option for db_statement ([#682](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/682))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+* Removed deprecated instrumentation options ([#265](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/265))
+
+### Features
+
+* Add `with_attributes` context propagation for PG instrumentation ([#101](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/101)) ([a11d8b1](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/a11d8b135d9ac4c28521619dc3b4744692ae2e6e))
+* add config[:obfuscation_limit] to pg and mysql2 ([#224](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/224)) ([b369020](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/b36902099ea90dc23d06bdc424a3fd6d08d5f9d7))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* obfuscation for mysql2, dalli and postgresql as default option for db_statement ([#682](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/682)) ([20e1cd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/20e1cd04f8167276453b27469912e90984a291ac))
+* Removed deprecated instrumentation options ([#265](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/265)) ([bf82e8d](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/bf82e8d5e25766de99b803e23af6c5666c5bfc5b))
+
+
+### Bug Fixes
+
+* add missing requires for sql-helpers to mysql, pg, and trilogy instrumentation ([#859](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/859)) ([0de90bb](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/0de90bb14165356f94a0243c6dd803ecd2b630e2))
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* only take the first item in a comma-separated list for pg attrs ([#142](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/142)) ([82093a9](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/82093a9edf478688d70432c036554dd2f979d7c6))
+* Pass block explicitly in `define_method` calls for PG instrumentation query methods ([#574](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/574)) ([84f7b64](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/84f7b641a38f059bc00ffc6678d0bdc283cffbbb))
+* **pg:** safeguard against host being nil ([#178](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/178)) ([38e975b](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/38e975bed8c3e2e0742007d1690bb81135341311))
+* Reduce Hash Allocations in PG Instrumentation ([#232](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/232)) ([53a5b26](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/53a5b26b471e692d7e85625c0f964510e4deef50))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([b31a4cb](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/b31a4cbb20ba7ee4a3422ce65f948a7fa3f43f85))
+* Use attributes from the active PG connection ([#185](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/185)) ([207369a](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/207369a5970548d32a4d3c19c9a85452509a1ddc))
+
+
+### Code Refactoring
+
+* Move shared sql behavior to helper gems ([#529](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/529)) ([c89d681](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/c89d6814f167f6adf3d2f1105e62e5987c8f5f49))
+
 ### v0.27.1 / 2024-02-08
 
 * FIXED: Add missing requires for sql-helpers to mysql, pg, and trilogy instrumentation
