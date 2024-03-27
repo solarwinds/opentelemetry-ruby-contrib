@@ -38,7 +38,7 @@
   "instrumentation/rails": "0.30.0",
   "instrumentation/redis": "0.25.3",
   "instrumentation/restclient": "0.22.3",
-  "instrumentation/rspec": "0.3.2",
+  "instrumentation/rspec": "0.4.0",
   "instrumentation/ruby_kafka": "0.21.0",
   "instrumentation/sidekiq": "0.25.0",
   "instrumentation/sinatra": "0.23.2",
