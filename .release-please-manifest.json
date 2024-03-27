@@ -19,7 +19,7 @@
   "instrumentation/lmdb": "0.22.1",
   "instrumentation/http": "0.23.2",
   "instrumentation/graphql": "0.27.0",
-  "instrumentation/http_client": "0.22.3",
+  "instrumentation/http_client": "0.23.0",
   "instrumentation/httpx": "0.1.1",
   "instrumentation/koala": "0.20.2",
   "instrumentation/active_model_serializers": "0.20.1",
