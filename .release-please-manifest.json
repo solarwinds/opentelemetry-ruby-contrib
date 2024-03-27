@@ -25,7 +25,7 @@
   "instrumentation/active_model_serializers": "0.20.1",
   "instrumentation/concurrent_ruby": "0.21.2",
   "instrumentation/dalli": "0.25.0",
-  "instrumentation/delayed_job": "0.22.1",
+  "instrumentation/delayed_job": "0.23.0",
   "instrumentation/ethon": "0.21.3",
   "instrumentation/excon": "0.22.0",
   "instrumentation/faraday": "0.23.4",
