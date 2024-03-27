@@ -1,5 +1,38 @@
 # Release History: opentelemetry-instrumentation-all
 
+## [0.57.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-all-v0.56.0...opentelemetry-instrumentation-all/v0.57.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move shared sql behavior to helper gems ([#529](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/529))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+* Drop Rails 5 support ([#324](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/324))
+* Update Instrumentations ([#303](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/303))
+
+### Features
+
+* add Grape instrumentation ([#394](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/394)) ([98baa88](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/98baa88ed0979702f56b804b34f397debe9bbaad))
+* Add Gruf instrumentation ([#188](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/188)) ([ac0c3c6](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/ac0c3c698386f623cea00cb4a558f93c5fbeaba1))
+* Add Rake instrumentation ([#80](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/80)) ([f0b55c1](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/f0b55c1b25344a9d5e8d2c441b2799769868e014))
+* bump minimum gem versions for opentelemetry-instrumentation-all ([#168](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/168)) ([11cb74e](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/11cb74e7bd10e2e0130a3ce34c925c149a4ba499))
+* Drop Rails 5 support ([#324](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/324)) ([6d99707](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6d9970708e51b0beb42761a9012751c4e9b64257))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* instrumentation for racecar ([#72](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/72)) ([7b87ce5](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7b87ce557ed13ad80d135348050a64042d423165))
+* Update Instrumentations ([#303](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/303)) ([5441260](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/54412608511e42591f5775e1d805682147e3bb94))
+* upgrade min instrumentation versions ([#135](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/135)) ([ddf9a7a](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/ddf9a7a9e1d2862374a93048fea0d3ab82f2d92b))
+
+
+### Bug Fixes
+
+* re-add Grape instrumentation to opentelemetry-instrumentation-all ([#439](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/439)) ([60d5165](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/60d5165341882c9d4f4e53807f1845b2ab0a5ba2))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+
+
+### Code Refactoring
+
+* Move shared sql behavior to helper gems ([#529](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/529)) ([c89d681](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/c89d6814f167f6adf3d2f1105e62e5987c8f5f49))
+
 ### v0.60.0 / 2024-02-20
 
 * ADDED: Add support gruf 2.19
