@@ -47,5 +47,6 @@
   "propagator/xray": "0.22.1",
   "resources/azure": "0.1.0",
   "resources/container": "0.1.1",
-  "resources/google_cloud_platform": "0.1.0"
+  "resources/google_cloud_platform": "0.1.0",
+  "propagator/vitess": "1.0.0"
 }
