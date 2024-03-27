@@ -1,5 +1,26 @@
 # Release History: opentelemetry-instrumentation-faraday
 
+## [0.24.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-faraday-v0.23.4...opentelemetry-instrumentation-faraday/v0.24.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+
+### Features
+
+* add request/response hooks to more http clients ([#71](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/71)) ([37696bd](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/37696bd2c5c8c58c072937e69834b562bf2c42a5))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* faraday add support for internal spans ([#873](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/873)) ([39f9a80](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/39f9a8088d1e3bd2abb37ab4f7115c4470c6a626))
+
+
+### Bug Fixes
+
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* Omit `nil` `net.peer.name` attributes ([#693](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/693)) ([0cc425b](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/0cc425b80dfcd339daee97b87fd7e7167e09d798))
+* Propagate response attributes on Faraday::Error ([#912](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/912)) ([da831f0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/da831f0b622830364197d48fb03c9615f8231249))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+
 ### v0.24.1 / 2024-03-22
 
 * FIXED: Propagate response attributes on Faraday::Error.
