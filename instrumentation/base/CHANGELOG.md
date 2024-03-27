@@ -1,5 +1,24 @@
 # Release History: opentelemetry-instrumentation-base
 
+## [0.23.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-base-v0.22.3...opentelemetry-instrumentation-base/v0.23.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* GraphQL instrumentation: support new tracing API ([#453](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/453))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+
+### Features
+
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* GraphQL instrumentation: support new tracing API ([#453](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/453)) ([5d87786](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/5d87786984b42e795af4646a3e9ca240c56573e9))
+
+
+### Bug Fixes
+
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+* Remove inline linter rules ([#608](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/608)) ([bc4a937](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/bc4a937ed2a0d1898f0f19ae45a2b3a0ef9a067c))
+
 ### v0.22.3 / 2023-11-23
 
 * CHANGED: Applied Rubocop Performance Recommendations [#727](https://github.com/open-telemetry/opentelemetry-ruby-contrib/pull/727)
