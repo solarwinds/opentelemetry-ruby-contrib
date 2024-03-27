@@ -1,5 +1,33 @@
 # Release History: opentelemetry-instrumentation-action_pack
 
+## [0.10.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-action_pack-v0.9.0...opentelemetry-instrumentation-action_pack/v0.10.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Rails 6.0 EOL ([#680](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/680))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+* Drop Rails 5 Support ([#259](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/259))
+* remove enable_recognize_route and span_naming options ([#214](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/214))
+
+### Features
+
+* Drop Rails 5 Support ([#259](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/259)) ([b0d5aa6](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/b0d5aa68dd660546d28f8f89ef9004ec776c7bf6))
+* Drop Rails 6.0 EOL ([#680](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/680)) ([3f44472](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/3f44472230964017d1831a47ea0661dc92d55909))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* name ActionPack spans with the HTTP method and route ([#123](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/123)) ([4a65b3d](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/4a65b3d7f76603eba1d958964c64093f47846929))
+* Use Rack Middleware Helper ([#428](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/428)) ([78a137e](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/78a137e6e95e4f4358e9a0f46d5e3e929e9f35be))
+
+
+### Bug Fixes
+
+* Add Rails 7.1 compatability ([#684](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/684)) ([93dcf35](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/93dcf359a8a66d17fed545f7a642f1d3a83d4ef4))
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* declare span_naming option in action_pack instrumentation ([#157](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/157)) ([274af43](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/274af43974a6830e883032661bddefbd2bdd0570))
+* Drop Rails dependency for ActiveSupport Instrumentation ([#242](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/242)) ([c571ece](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/c571ecee6283e877fb7df3ea2b01acf722410551))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+* remove enable_recognize_route and span_naming options ([#214](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/214)) ([ea604aa](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/ea604aa77e0d4c26e1d178877dea75c795f039ee))
+
 ### v0.9.0 / 2024-01-09
 
 * BREAKING CHANGE: Use ActiveSupport instead of patches #703 
