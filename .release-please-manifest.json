@@ -6,7 +6,7 @@
   "instrumentation/racecar": "0.3.0",
   "instrumentation/rake": "0.2.1",
   "instrumentation/rdkafka": "0.4.2",
-  "instrumentation/trilogy": "0.58.0",
+  "instrumentation/trilogy": "0.59.0",
   "instrumentation/active_support": "0.5.1",
   "instrumentation/action_view": "0.7.0",
   "instrumentation/action_pack": "0.9.0",
