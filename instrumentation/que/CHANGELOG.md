@@ -1,5 +1,32 @@
 # Release History: opentelemetry-instrumentation-que
 
+## [0.8.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-que-v0.7.1...opentelemetry-instrumentation-que/v0.8.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move shared sql behavior to helper gems ([#529](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/529))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+
+### Features
+
+* add support for `job_options` argument ([#57](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/57)) ([47812af](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/47812af5fc67b22ada1d4749ecdf52532ccf107a))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+
+
+### Bug Fixes
+
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* Drop Rails dependency for ActiveSupport Instrumentation ([#242](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/242)) ([c571ece](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/c571ecee6283e877fb7df3ea2b01acf722410551))
+* **que:** Correctly set bulk_enqueue job options ([#573](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/573)) ([cf5f236](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/cf5f236e91252bf9d399f8862de6f06d36b5d03d))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+* remove `job_options` when using `bulk_enqueue` ([#205](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/205)) ([6e89c92](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6e89c92f189bc6e187da06ea2af4e38531b93601))
+
+
+### Code Refactoring
+
+* Move shared sql behavior to helper gems ([#529](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/529)) ([c89d681](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/c89d6814f167f6adf3d2f1105e62e5987c8f5f49))
+
 ### v0.8.0 / 2024-02-08
 
 * BREAKING CHANGE: Move shared sql behavior to helper gems

@@ -33,7 +33,7 @@
   "instrumentation/mysql2": "0.25.0",
   "instrumentation/net_http": "0.22.4",
   "instrumentation/pg": "0.26.1",
-  "instrumentation/que": "0.7.1",
+  "instrumentation/que": "0.8.0",
   "instrumentation/rack": "0.24.0",
   "instrumentation/rails": "0.30.0",
   "instrumentation/redis": "0.25.3",
