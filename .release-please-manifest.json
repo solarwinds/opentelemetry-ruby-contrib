@@ -36,7 +36,7 @@
   "instrumentation/que": "0.7.1",
   "instrumentation/rack": "0.24.0",
   "instrumentation/rails": "0.30.0",
-  "instrumentation/redis": "0.25.3",
+  "instrumentation/redis": "0.26.0",
   "instrumentation/restclient": "0.22.3",
   "instrumentation/rspec": "0.3.2",
   "instrumentation/ruby_kafka": "0.21.0",
