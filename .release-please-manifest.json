@@ -18,7 +18,7 @@
   "instrumentation/aws_sdk": "0.5.0",
   "instrumentation/lmdb": "0.22.1",
   "instrumentation/http": "0.23.2",
-  "instrumentation/graphql": "0.27.0",
+  "instrumentation/graphql": "0.28.0",
   "instrumentation/http_client": "0.22.3",
   "instrumentation/httpx": "0.1.1",
   "instrumentation/koala": "0.20.2",
