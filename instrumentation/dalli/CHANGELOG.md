@@ -1,5 +1,26 @@
 # Release History: opentelemetry-instrumentation-dalli
 
+## [0.26.0](https://github.com/solarwinds/opentelemetry-ruby-contrib/compare/opentelemetry-instrumentation-dalli-v0.25.0...opentelemetry-instrumentation-dalli/v0.26.0) (2024-03-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* obfuscation for mysql2, dalli and postgresql as default option for db_statement ([#682](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/682))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389))
+
+### Features
+
+* add db.operation attribute for dalli ([#458](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/458)) ([f631a26](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/f631a26222b5cc3b20224c081b6d594568089044))
+* Drop support for EoL Ruby 2.7 ([#389](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/389)) ([233dfd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/233dfd0dae81346e9687090f9d8dfb85215e0ba7))
+* obfuscation for mysql2, dalli and postgresql as default option for db_statement ([#682](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/682)) ([20e1cd0](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/20e1cd04f8167276453b27469912e90984a291ac))
+
+
+### Bug Fixes
+
+* `format_command`'s terrible performance ([#207](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/207)) ([950c7b2](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/950c7b283a0343fef6a3396c9eb542e173b9e3da))
+* Base config options ([#499](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/499)) ([7304e86](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/7304e86e9a3beba5c20f790b256bbb54469411ca))
+* regex non-match with obfuscation limit (issue [#486](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/486)) ([#488](https://github.com/solarwinds/opentelemetry-ruby-contrib/issues/488)) ([6a9c330](https://github.com/solarwinds/opentelemetry-ruby-contrib/commit/6a9c33088c6c9f39b2bc30247a3ed825553c07d4))
+
 ### v0.25.0 / 2023-10-16
 
 * BREAKING CHANGE: Obfuscation for mysql2, dalli and postgresql as default option for db_statement
