@@ -45,7 +45,7 @@
   "instrumentation/all": "0.56.0",
   "propagator/ottrace": "0.21.2",
   "propagator/xray": "0.22.1",
-  "resources/azure": "0.1.0",
+  "resources/azure": "0.1.1",
   "resources/container": "0.1.1",
   "resources/google_cloud_platform": "0.1.0"
 }
